@@ -1,0 +1,7 @@
+{
+  "name": "Enstack-FrontEnd-Exam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
