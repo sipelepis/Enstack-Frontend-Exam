@@ -1,0 +1,27 @@
+.flex-container{
+  height: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  background: url('../../assets/img/landing_splash.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+.wrapper{
+  margin: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h1{
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  line-height: 30%;
+  font-size: xx-large;
+  color: #242424;
+}
+p{
+  padding-top: 1.15rem;
+  font-size: 1.15rem;
+  color: #808080;
+}
