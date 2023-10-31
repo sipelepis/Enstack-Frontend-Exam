@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ItemPageComponent } from './item-page.component';
+import { MainCardComponent } from './main-card.component';
 
-describe('ItemPageComponent', () => {
-  let component: ItemPageComponent;
-  let fixture: ComponentFixture<ItemPageComponent>;
+describe('MainCardComponent', () => {
+  let component: MainCardComponent;
+  let fixture: ComponentFixture<MainCardComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ItemPageComponent ],
+      declarations: [ MainCardComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ItemPageComponent);
+    fixture = TestBed.createComponent(MainCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

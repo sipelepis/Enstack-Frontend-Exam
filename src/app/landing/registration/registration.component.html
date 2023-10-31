@@ -1,3 +1,111 @@
-<p>
-  registration works!
-</p>
+<ion-content [fullscreen]="true">
+  <div class="flex-container">
+    <div class="wrapper">
+      <div>
+        <div class="logo-wrapper">
+          <div class="horizontal-break"></div>
+          <img src="../../../assets/svg/logo.svg" />
+          <div class="horizontal-break"></div>
+        </div>
+        <span>
+          <h1>WELCOME</h1>
+        </span>
+      </div>
+      <div class="form-wrapper">
+        <form
+          [formGroup]="registerForm"
+          method="POST"
+          (ngSubmit)="registerUser()"
+        >
+          <mat-form-field class="example-full-width">
+            <mat-label for="name">Name</mat-label>
+            <input matInput placeholder="Phillip Moran" type="name"
+            name="name"
+            id="name"
+            formControlName="name"
+            required>
+            <mat-error *ngIf="registerForm.get('name')?.invalid">
+              {{ checkName() }}
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field [color]="'primary'">
+            <mat-label for="email">Email</mat-label>
+            <input
+              matInput
+              placeholder="spooderman@gmail.com"
+              type="email"
+              name="email"
+              id="email"
+              formControlName="email"
+              required
+            />
+            <mat-error *ngIf="registerForm.get('email')?.hasError">
+              {{ checkEmail() }}
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field [color]="'primary'">
+            <mat-label>Password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" name="password"
+            id="password"
+            formControlName="password"
+            required>
+            <button mat-icon-button type="button" matSuffix (click)="setPassVis()" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error
+              *ngIf="registerForm.get('password')?.hasError('required')"
+            >
+              {{ checkPassword() }}
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field style="margin-bottom: 2rem;" [color]="'primary'">
+            <mat-label>Confirm Password</mat-label>
+            <input matInput [type]="hideConf ? 'password' : 'text'" name="confirmPassword"
+            id="confirmPassword"
+            formControlName="confirmPassword"
+            required>
+            <button mat-icon-button type="button" matSuffix (click)="setConfPassVis()" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideConf">
+              <mat-icon>{{hideConf ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error
+              *ngIf="registerForm.get('confirmPassword')?.hasError('required')"
+            >
+              {{ checkConfPassword() }}
+            </mat-error>
+          </mat-form-field>
+          <ion-button
+            mat-raised-button
+            type="submit"
+            [disabled]="!registerForm.valid"
+            color="rounded-button"
+            size="medium"
+            color="dark"
+            expand="block"
+            style="margin-bottom: 1rem;"
+          >
+            Sign Up
+          </ion-button>
+          <span>
+            <p>Already have an account?
+              <a
+              routerLink="/landing/login"
+              class="rounded-button"
+              expand="block"
+              >
+                Log In
+              </a>
+            </p>
+          </span>
+        </form>
+        <ion-toast
+          [isOpen]="isSamePass"
+          message="Password do not match. Please try again."
+          [duration]="5000"
+          [color]="'danger'"
+          (didDismiss)="setPassSnackbar(false)"
+        ></ion-toast>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -4,7 +4,7 @@
       <div>
         <div class="logo-wrapper">
           <div class="horizontal-break"></div>
-          <img src="../../../assets/img/logo.svg" />
+          <img src="../../../assets/svg/logo.svg" />
           <div class="horizontal-break"></div>
         </div>
         <span>
@@ -16,7 +16,7 @@
         <form
           [formGroup]="contactForm"
           method="POST"
-          (ngSubmit)="loginEmployee()"
+          (ngSubmit)="loginUser()"
         >
           <div></div>
           <mat-form-field [color]="'primary'">
@@ -72,6 +72,18 @@
             Sign Up
           </a>
         </form>
+        <ion-toast
+          [isOpen]="isFailedToastOpen"
+          message="Incorrect password. Please double-check your password and try again."
+          [duration]="5000"
+          (didDismiss)="setFailedToastOpen(false)"
+        ></ion-toast>
+        <ion-toast
+          [isOpen]="isLockedOutToastOpen"
+          message="Login locked out. Please try again later after 1 minute."
+          [duration]="5000"
+          (didDismiss)="setFailedToastOpen(false)"
+        ></ion-toast>
       </div>
     </div>
   </div>
