@@ -1,0 +1,9 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let item of data" class="ion-no-margin">
+        <app-main-card [item]="item"></app-main-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

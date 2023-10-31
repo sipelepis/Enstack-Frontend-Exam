@@ -6,6 +6,10 @@
     --ion-color-selected: #242424;
   }
 }
+ion-tab-bar{
+  overflow-x: auto;
+  white-space: nowrap;
+}
 ion-toolbar{
   display: flex;
   flex-direction: row;
@@ -36,8 +40,6 @@ ion-content{
       display: flex;
       flex-direction: row;
       gap: 1rem;
-      overflow-x: auto;
-      white-space: nowrap; /* Prevents content from wrapping */
       .deactivated-button{
         font-weight: 500;
         color: #808080 !important;

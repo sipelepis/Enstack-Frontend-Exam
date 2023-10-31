@@ -1,0 +1,16 @@
+
+.custom-card {
+  position: relative;
+  height:400px;
+}
+
+.custom-img {
+  position: relative;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ion-icon {
+  color: var(--ion-color-light); /* Set the icon color */
+}

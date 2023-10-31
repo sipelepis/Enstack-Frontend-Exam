@@ -27,3 +27,26 @@
 :root{
   font-family: 'Poppins', sans-serif;
 }
+:root{
+  --tab-button-color: #808080;
+  --tab-button-color-selected: white; // Set your desired color
+  --tab-button-background-selected: #242424; // Set your desired color
+  --tab-button-background: pink; // Set your desired background color
+}
+
+.custom-tab-button {
+  --color: var(--tab-button-color); // Apply custom text color
+  --color-selected: var(--tab-button-background-selected);
+  --ripple-color:var(--tab-button-background-selected);
+  --background: var(--tab-button-color-selected);
+}
+.custom-tab-button.active{
+  --background: var(tab-button-background-selected);
+}
+.custom-fab-button::part(native){
+  --background: var(--tab-button-color);
+  border-radius: 15px;
+}
+.ion-fab-button-icon{
+  --color: var(--tab-button-background-selected);
+}

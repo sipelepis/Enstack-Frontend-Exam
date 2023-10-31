@@ -1,0 +1,25 @@
+ion-content{
+  .popular-container{
+    background: pink;
+    margin: 1rem;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  .custom-card {
+    height: 400px; /* Set a fixed height for the card */
+  }
+
+  .custom-img {
+    height: 60%; /* Set a fixed height for the image (60% of the card height) */
+    width: auto; /* Allow the image to adjust its width proportionally */
+    object-fit: cover; /* Prevent the image from stretching */
+  }
+
+  .custom-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}

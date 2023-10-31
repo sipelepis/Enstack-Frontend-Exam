@@ -16,7 +16,32 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
+<ion-tabs>
+  <ion-tab-bar slot="top" >
+
+    <ion-tab-button class="custom-tab-button" tab="popular" href="/home/main/popular">
+      <ion-icon name="star"></ion-icon>
+      <ion-label>Popular</ion-label>
+    </ion-tab-button>
+    <ion-tab-button  class="custom-tab-button" tab="chair" href="/home/main/chair">
+      <ion-icon name="folder-open"></ion-icon>
+      <ion-label>Chair</ion-label>
+    </ion-tab-button>
+    <ion-tab-button class="custom-tab-button" tab="table" href="/home/main/table">
+      <ion-icon name="library"></ion-icon>
+      <ion-label>Table</ion-label>
+    </ion-tab-button>
+    <ion-tab-button class="custom-tab-button" tab="armchair" href="/home/main/armchair">
+      <ion-icon name="heart-circle"></ion-icon>
+      <ion-label>Armchair</ion-label>
+    </ion-tab-button>
+    <ion-tab-button class="custom-tab-button" tab="bed" href="/home/main/bed">
+      <ion-icon name="bed"></ion-icon>
+      <ion-label>Bed</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+<!-- <ion-content [fullscreen]="true">
   <ion-content [fullscreen]="true">
     <div class="home-container">
       <div class="category-wrapper">
@@ -56,4 +81,4 @@
       </div>
     </div>
   </ion-content>
-</ion-content>
+</ion-content> -->
