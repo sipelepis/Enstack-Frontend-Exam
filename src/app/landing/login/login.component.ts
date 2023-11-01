@@ -61,7 +61,7 @@ export class LoginComponent implements OnInit {
         this.contactForm.get('password')?.valid
       ) {
         if (this.contactForm.get('password')?.value === 'Testpassw0rd1') {
-          this.routerService.navigate(['/landing/register']);
+          this.routerService.navigate(['/home']);
         }
         else{
           console.log("failed login!");

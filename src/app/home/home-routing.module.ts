@@ -12,8 +12,8 @@ const routes: Routes = [
         loadChildren: () => import('./home-tab/home-tab.module').then( m => m.HomeTabPageModule)
       },
       {
-        path: 'bookmarks',
-        loadChildren: () => import('./bookmarks-tab/bookmarks-tab.module').then( m => m.BookmarksTabPageModule)
+        path: 'favorites',
+        loadChildren: () => import('./favorites-tab/favorites-tab.module').then( m => m.FavoritesTabPageModule)
       },
       {
         path: 'notifications',

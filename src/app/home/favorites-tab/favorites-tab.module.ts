@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomeTabPageRoutingModule } from './home-tab-routing.module';
+import { FavoritesTabPageRoutingModule } from './favorites-tab-routing.module';
 
-import { HomeTabPage } from './home-tab.page';
+import { FavoritesTabPage } from './favorites-tab.page';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomeTabPageRoutingModule,
+    FavoritesTabPageRoutingModule,
     SharedModule
   ],
-  declarations: [HomeTabPage]
+  declarations: [FavoritesTabPage]
 })
-export class HomeTabPageModule {}
+export class FavoritesTabPageModule {}

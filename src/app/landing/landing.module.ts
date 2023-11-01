@@ -14,11 +14,12 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
+    IonicModule.forRoot(),
     LandingPageRoutingModule,
     MatInputModule,
     MatFormFieldModule,
@@ -26,7 +27,7 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
     ReactiveFormsModule,
     MatSelectModule,
     MatIconModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ],
   declarations: [LandingPage, LoginComponent, RegistrationComponent]
 })

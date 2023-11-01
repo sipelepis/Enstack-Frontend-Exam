@@ -1,16 +1,27 @@
 
 .custom-card {
   position: relative;
-  height:400px;
+  height:300px;
 }
 
 .custom-img {
   position: relative;
-  height: 70%;
+  height: 75%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 ion-icon {
   color: var(--ion-color-light); /* Set the icon color */
+}
+
+p{
+  font-size: 0.875rem;
+  color: #808080;
+  margin: 0;
+}
+.price-p{
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #242424;
 }

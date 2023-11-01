@@ -1,0 +1,12 @@
+ion-header{
+  --box-shadow: none;
+  border-bottom: none;
+  white-space: nowrap;
+  text-align: center;
+}
+ion-content{
+  .content-wrapper{
+    margin: 2rem;
+    background-color: pink;
+  }
+}

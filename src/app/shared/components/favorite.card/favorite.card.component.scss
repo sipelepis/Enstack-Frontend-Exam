@@ -1,0 +1,25 @@
+.card-item-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:1rem;
+  .card-image-wrapper{
+    border-radius: 1rem;
+    height: 6rem;
+    width: 6rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-alpha-sig.figma.com/img/01b3/a6d6/88ed658a2d0159fe18074af4a860b24f?Expires=1699833600&Signature=mdrErcg5BcJVeAA62KAb-P5wEwF8Fl1wRPQrYbE5YLTKiMvEkpmM~nZK-hWymiBDJ2WUx4E~cmH2jwDnLRnEn-8hcePK5sK7uBu8Fla7eydoLE2nadlwU7-KscgibyOQ~sFzmq~rjFFqB5Wwgx1rsRl02fxNjP6XBQH04sOh8zcQhzXlqZJvQXicc1GhDtaxFI6UGnIednR2lL8rgV-7rgvYVZJM3Fnu8jt39Q2mQiIwE1EQmPNAMD2TyM7mmnxhbtjw3Sp9~ICCyertfM5Y~qSTBgEgHM5PzIE7Q5C5ykA5c~p3lwrHWWLVCzZB5UGNVkXOlurB6E96ZSJ14Tdz7Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  }
+  .info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: blue;
+  }
+  .buttons-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

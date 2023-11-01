@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true">
+  <div class="parent-wrapper">
+      <!-- [style.backgroundImage]="'url(' + item?.main_image + ')'" -->
+    <div class="content-wrapper">
+      <div class="image-wrapper" [style.backgroundImage]="'url(' + item?.main_image + ')'">
+      </div>
+      <ion-fab vertical="top" horizontal="start">
+        <ion-fab-button class="custom-fab-button" (click)="navHome()">
+          <ion-icon size="medium" class="ion-fab-button-icon-item" name="chevron-back"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+    <div class="info-wrapper">
+      <div class="top-info">
+        <!-- <p class="title">Title</p> -->
+        <p class="title">{{item.name}}</p>
+        <div class="price-quantity-wrapper">
+          <!-- <h1 class="price">$14.01</h1> -->
+          <h1 class="price">${{item.price}}</h1>
+
+          <div class="stepper-wrapper">
+            <ion-button size="small" class="custom-fab-button-stepper" (click)="increment()">+</ion-button>
+            <p class="quantity-text">{{ quantity }}</p>
+            <ion-button size="small" class="custom-fab-button-stepper" (click)="decrement()">-</ion-button>
+          </div>
+        </div>
+        <div class="review-wrapper">
+          <div class="star-fab">
+            <ion-icon color="warning" size="medium" name="star"></ion-icon>
+            <!-- <p class="rating-text">4.5</p> -->
+            <p class="rating-text">{{item.rating}}</p>
+          </div>
+          <!-- <p class="review-text">(50 Reviews)</p> -->
+          <p class="review-text">({{item.review_count}} Reviews)</p>
+        </div>
+      </div>
+      <div class="description-wrapper">
+        <!-- <p>Minimal Stand is made of by natural wood. The design that is very simple and minimal. This is truly one of the best furnitures in any family for now. With 3 different colors, you can easily select the best match for your home. </p> -->
+        <p>{{item.description}}</p>
+      </div>
+      <div class="buttons-wrapper">
+        <ion-button expand="block" size="large" class="favorites-button custom-fab-button-stepper" *ngIf="!isItemExistInFavorites()" (click)="addItemToFavorites()">
+          <ion-icon name="bookmarks-outline"></ion-icon>
+        </ion-button>
+        <ion-button expand="block" size="large" class="favorites-button custom-fab-button-stepper" *ngIf="isItemExistInFavorites()" (click)="removeItemToFavorites()">
+          <ion-icon name="bookmarks"></ion-icon>
+        </ion-button>
+        <ion-button color="dark" expand="block" size="large" class="cart-button" *ngIf="!isItemExistInCart()" (click)="addItemToCart()">
+          <ion-icon name="bag-add"></ion-icon>
+          <p>Add To Cart</p>
+        </ion-button>
+        <ion-button color="dark" expand="block" size="large" class="cart-button" *ngIf="isItemExistInCart()" (click)="removeItemToCart()">
+          <ion-icon name="bag-remove"></ion-icon>
+          <p>Remove From Cart</p>
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -13,11 +13,6 @@ export class ChairPage implements OnInit {
   constructor(private filterService: FilterResService) { }
   ngOnInit() {
     this.data = this.filterService.filterAndSortChairs();
-    console.log("Popular: ",this.filterService.setPopular());
-    console.log("Chair: ",this.filterService.filterAndSortChairs());
-    console.log("Table: ",this.filterService.filterAndSortTables());
-    console.log("Armchair: ",this.filterService.filterAndSortArmchair());
-    console.log("Bed: ",this.filterService.filterAndSortBed());
   }
 
 }

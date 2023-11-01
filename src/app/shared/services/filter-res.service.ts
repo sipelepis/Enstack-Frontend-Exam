@@ -6,7 +6,8 @@ import { DataInterface } from '../types/data.model';
   providedIn: 'root'
 })
 export class FilterResService {
-  data: DataInterface[] = data
+  data: DataInterface[] = data;
+  item?: DataInterface;
   constructor() { }
   setPopular(): DataInterface[]{
     return data.filter(item => item.rating >= 4.0);
@@ -40,4 +41,5 @@ export class FilterResService {
     const bedItems = data.filter(item => item.type === 'bed');
     return this.sortByRatingDescending(bedItems);
   }
+
 }

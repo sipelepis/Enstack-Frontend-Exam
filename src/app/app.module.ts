@@ -29,7 +29,7 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
     ReactiveFormsModule,
     MatIconModule,
     SharedModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ],
   providers: [
     { provide: RouteReuseStrategy,

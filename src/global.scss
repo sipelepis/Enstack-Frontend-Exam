@@ -50,3 +50,7 @@
 .ion-fab-button-icon{
   --color: var(--tab-button-background-selected);
 }
+.ion-fab-button-icon-item{
+  --color: var(--tab-button-color);
+  --background: var(--tab-button-color-selected);
+}
