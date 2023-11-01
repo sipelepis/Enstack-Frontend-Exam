@@ -1,20 +1,20 @@
 <div class="card-item-container">
   <div class="card-info-image-wrapper">
     <div class="card-image-wrapper" [style.backgroundImage]="'url(' + item.main_image + ')'">
-
     </div>
     <div class="info-wrapper">
       <p class="title">{{item.name}}</p>
       <p class="price">${{item.price}}</p>
+      <div class="stepper-wrapper">
+        <ion-button size="small" class="custom-fab-button-stepper" (click)="increment()">+</ion-button>
+        <p class="quantity-text">{{ quantity }}</p>
+        <ion-button size="small" class="custom-fab-button-stepper" (click)="decrement()">-</ion-button>
+      </div>
     </div>
   </div>
   <div class="buttons-wrapper">
-
-    <ion-fab-button size="small" class="custom-fab-button-close" (click)="removeItemToFavorites()" >
+    <ion-fab-button size="small" class="custom-fab-button-close" (click)="removeItemFromCart()" >
       <ion-icon class="ion-fab-button-icon" name="close-circle-outline"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-button size="small" class="custom-fab-button" (click)="openItemComponent()">
-      <ion-icon class="ion-fab-button-icon" name="bag-add"></ion-icon>
     </ion-fab-button>
   </div>
 </div>

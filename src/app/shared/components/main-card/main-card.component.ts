@@ -44,7 +44,6 @@ export class MainCardComponent implements OnInit {
   }
   // openItemComp
   openItemComponent(){
-
     this.itemService.setItem(this.item);
     this.route.navigate(['/item']);
   }

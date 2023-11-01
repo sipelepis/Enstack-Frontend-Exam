@@ -1,0 +1,30 @@
+ion-content{
+  .success-wrapper{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    height:100svh;
+    padding:2rem 3rem;
+    .top-success-container{
+      margin-top: 2rem;
+      .top-text{
+        font-weight: 900;
+        color: #303030;
+        font-size: xx-large;
+      }
+
+      .bottom-text{
+        font-weight: 400;
+        color: #808080;
+        font-size: large;
+      }
+    }
+    .bottom-success-container{
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+  }
+}

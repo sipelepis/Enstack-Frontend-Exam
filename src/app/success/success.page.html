@@ -1,0 +1,20 @@
+
+
+<ion-content [fullscreen]="true">
+  <div class="success-wrapper">
+    <div class="top-success-container">
+      <p class="top-text">SUCCESS!</p>
+      <img class="img-container" src="https://i.ibb.co/3mKh7Xr/success-img.png" >
+      <p class="bottom-text">Your order will be delivered soon.
+        Thank you for choosing our app!</p>
+    </div>
+    <div class="bottom-success-container">
+      <ion-button color="dark" expand="block">
+        <p class="bottom-text">Track your orders</p>
+      </ion-button>
+      <ion-button color="dark" expand="block" (click)="navHome()">
+        <p class="bottom-text">Back to home</p>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

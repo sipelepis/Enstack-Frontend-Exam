@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CartPage } from 'src/app/cart/cart.page';
 import { DataInterface } from 'src/app/shared/types/data.model';
 
 @Component({
@@ -8,9 +10,12 @@ import { DataInterface } from 'src/app/shared/types/data.model';
 })
 export class HomeTabPage implements OnInit {
   selectedTab?: string = "popular";
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
+  }
+  navToCart(){
+    this.route.navigate(['cart'])
   }
 
 }

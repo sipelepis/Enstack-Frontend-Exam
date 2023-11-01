@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CheckOutComponent } from './check-out.component';
+import { CartCardComponent } from './cart.card.component';
 
-describe('CheckOutComponent', () => {
-  let component: CheckOutComponent;
-  let fixture: ComponentFixture<CheckOutComponent>;
+describe('CartCardComponent', () => {
+  let component: CartCardComponent;
+  let fixture: ComponentFixture<CartCardComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CheckOutComponent ],
+      declarations: [ CartCardComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CheckOutComponent);
+    fixture = TestBed.createComponent(CartCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

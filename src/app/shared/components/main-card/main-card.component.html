@@ -1,27 +1,11 @@
 
 <ion-card class="custom-card">
-    <div class="custom-img" [style.backgroundImage]="'url(' + item?.main_image + ')'">
+    <div class="custom-img" [style.backgroundImage]="'url(' + item.main_image + ')'">
       <ion-fab vertical="bottom" horizontal="end">
         <ion-fab-button class="custom-fab-button" (click)="openItemComponent()">
           <ion-icon class="ion-fab-button-icon" name="bag-add"></ion-icon>
         </ion-fab-button>
-        <!-- <ion-fab-list side="top">
-          <ion-fab-button class="custom-fab-button" *ngIf="!isItemExistInCart()" (click)="addItemToCart()">
-            <ion-icon class="ion-fab-button-icon" name="bag-add"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button class="custom-fab-button" *ngIf="!isItemExistInCart()" (click)="openItemComponent()">
-            <ion-icon class="ion-fab-button-icon" name="bag-add"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button class="custom-fab-button" *ngIf="isItemExistInCart()" (click)="removeItemToCart()">
-            <ion-icon class="ion-fab-button-icon" name="bag-remove"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button class="custom-fab-button" *ngIf="!isItemExistInFavorites()" (click)="addItemToFavorites()" >
-            <ion-icon class="ion-fab-button-icon" name="bookmarks-outline"></ion-icon>
-          </ion-fab-button>
-          <ion-fab-button class="custom-fab-button" *ngIf="isItemExistInFavorites()" (click)="removeItemToFavorites()" >
-            <ion-icon class="ion-fab-button-icon" name="bookmarks"></ion-icon>
-          </ion-fab-button>
-        </ion-fab-list> -->
+
       </ion-fab>
     </div>
     <ion-card-header>

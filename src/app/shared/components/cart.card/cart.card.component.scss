@@ -11,8 +11,8 @@
     gap:1rem;
     .card-image-wrapper{
       border-radius: 1rem;
-      height: 6rem;
-      width: 6rem;
+      height: 7rem;
+      width: 7rem;
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -29,12 +29,28 @@
         font-weight: 900;
         color: #242424;
       }
+      .stepper-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0.2rem;
+        align-items: center;
+        .stepper-buttons{
+
+        }
+        .quantity-text{
+          text-align: center;
+          font-weight:400;
+          font-size: large;
+        }
+      }
     }
   }
+
   .buttons-wrapper{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 p{
@@ -54,4 +70,9 @@ p{
 .ion-fab-button-icon-item{
   --color: var(--tab-button-color);
   --background: var(--tab-button-color-selected);
+}
+.custom-fab-button-stepper{
+  --color: #242424;
+  --background: #f5f5f5;
+  border-radius: 15px;
 }

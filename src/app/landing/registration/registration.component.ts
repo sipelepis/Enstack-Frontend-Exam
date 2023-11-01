@@ -2,7 +2,6 @@ import { trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
@@ -13,7 +12,6 @@ export class RegistrationComponent  implements OnInit {
   hide = true;
   hideConf = true;
   registerForm: FormGroup;
-
   constructor(
     private formBuilder: FormBuilder,
     private routerService: Router,
@@ -25,7 +23,6 @@ export class RegistrationComponent  implements OnInit {
       confirmPassword: ['', [Validators.required, Validators.pattern(/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&^])[^\s@]{8,}$/)]],
     });
   }
-
   ngOnInit() {}
   setPassVis() {
     this.hide = !this.hide;
@@ -40,7 +37,6 @@ export class RegistrationComponent  implements OnInit {
     return this.registerForm.get('name')?.hasError('pattern')
       ? 'Not a valid name'
       : '';
-
   }
   checkEmail() {
     if (this.registerForm.get('email')?.hasError('required')) {

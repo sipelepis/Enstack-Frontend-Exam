@@ -6,10 +6,8 @@
 
 <ion-content [fullscreen]="true">
   <div class="content-wrapper">
-    <ion-list>
-      <ion-item>
-        <app-favorite-card></app-favorite-card>
-      </ion-item>
-    </ion-list>
+    <div class="list-wrapper" *ngFor="let item of favoriteItems">
+      <app-favorite-card [item]="item"></app-favorite-card>
+    </div>
   </div>
 </ion-content>

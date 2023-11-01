@@ -11,3 +11,6 @@ export interface DataInterface {
   review_count: number;
   stock: number;
 }
+export interface CartInterface extends DataInterface{
+  quantity: number;
+}

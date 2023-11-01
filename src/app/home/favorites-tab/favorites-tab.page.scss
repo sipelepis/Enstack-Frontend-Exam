@@ -7,6 +7,19 @@ ion-header{
 ion-content{
   .content-wrapper{
     margin: 2rem;
-    background-color: pink;
+    .list-wrapper{
+      padding: 0.5rem 0.5rem;
+      border-bottom: 1px solid #e0e0e0;
+      .item-wrapper{
+
+      }
+    }
+  }
+
+}
+:root{
+  ion-item{
+    width: 100%;
+    background-color: blue;
   }
 }

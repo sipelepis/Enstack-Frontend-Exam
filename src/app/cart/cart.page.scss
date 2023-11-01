@@ -1,0 +1,81 @@
+:root{
+  ion-item{
+    width: 100%;
+  }
+}
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+::ng-deep .mat-form-field-underline {
+  bottom: 0;
+}
+.mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+.mat-form-field-underline {
+  bottom: 0;
+}
+ion-header{
+  --box-shadow: none;
+  border-bottom: none;
+  white-space: nowrap;
+}
+ion-content{
+  .content-wrapper{
+    margin: 2rem;
+    .list-wrapper{
+      padding: 0.5rem 0.5rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+}
+ion-footer{
+  ion-toolbar{
+    display:flex;
+    padding: 2rem;
+    flex-direction: column;
+    form{
+      display:flex;
+      margin:0;
+      padding: 0;
+      flex-direction: row;
+      gap:1rem;
+      mat-form-field{
+        margin:0;
+        padding:0;
+        bottom: 0;
+        width: 80%;
+      }
+      ion-button{
+        margin-bottom: 1.35rem;
+        width: 20%;
+      }
+    }
+    .total-wrapper{
+      display: flex;
+      flex-direction: row;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      justify-content: space-between;
+      .total-text{
+        color: #808080;
+      }
+      .price-text{
+        color: #242424;
+      }
+    }
+    .checkout-wrapper{
+
+    }
+  }
+}
+.custom-fab-button-stepper{
+  --color:#f5f5f5;
+  --background: #242424;
+  border-radius: 15px;
+}
+h3{
+  padding:0;margin:0;
+}
