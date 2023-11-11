@@ -39,7 +39,6 @@ $app-theme: mat.define-light-theme((
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
-
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -114,7 +113,7 @@ $app-theme: mat.define-light-theme((
   --ion-color-light-tint: #f5f6f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
